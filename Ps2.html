@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajay's gym</title>
+    <link rel="stylesheet" href="Ps2.css">
+    <script src="noaction.php"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    body {
+        font-family: 'Ubuntu Mono', monospace;
+        padding: 0px;
+        margin: 0px;
+        background: url(bg.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: auto;
+        color: white;
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        top: 10px;
+    }
+
+    .left img {
+        width: 150px;
+        filter: invert(100%);
+
+    }
+
+    .left div {
+        text-align: center;
+        line-height: 0px;
+    }
+
+    .mid {
+        display: block;
+        width: 50%;
+
+        position: relative;
+        left: 750px;
+        top: 5px;
+        /* border: 3px solid green; */
+
+
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px
+        /* position: relative; */
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 35px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(72, 71, 71);
+    }
+
+    .container{
+        /* border: solid rebeccapurple; */
+        margin: 169px 967px;
+        /* display: block; */
+        width: 33%;
+        padding: 27px;
+        border-radius: 30px;
+
+    }
+    .container h1{
+    text-align: center;
+    padding: 0px auto;
+     text-size-adjust: 500px;
+    }
+    .formgroup input{
+        font-family: 'Ubuntu Mono', monospace;
+        text-align: center;
+        display: block;
+        width: 500px;
+        padding: 1px;
+        margin: 10px auto;
+        font-size: 30px;
+        border-radius: 15px;
+
+
+    }
+    .btn{
+        border: 2px solid grey;
+        border-radius: 10px;
+        display: block;
+        width: 75px;
+        margin: 20px auto;
+        font: size 80px;
+
+    }
+</style>
+<header class="header">
+    <div class="left">
+        <img src="logo1.png" alt="">
+        <div> Ajay'gym </div>
+    </div>
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Fitness</a></li>
+            <li><a href="#">Calculator</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </div>
+</header>
+<div class="container">
+    <h1>
+        Ajay's gym
+    </h1>
+    <form action="noaction.php">
+        <div class="formgroup">
+            <input type="text" placeholder="Name">
+        </div>
+        <div class="formgroup">
+            <input type="number" placeholder="Age">
+        </div>
+        <div class="formgroup">
+            <input type="text"placeholder="Gender">
+        </div>
+        <div class="formgroup">
+            <input type="number" placeholder="Phone">
+        </div>
+        <div class="formgroup">
+            <input type="text" placeholder="E-mail">
+        </div>
+        <button class="btn">Submit</button>         
+    </form>
+</div>
+
+<body>
+
+</body>
+
+</html>
